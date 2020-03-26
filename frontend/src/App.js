@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import {useState} from 'react';
 
+//import Header from './Header';
+import './global.css';
+
+import Routes from './routes';
+
+/** JSX (Javascript XML) 
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  //useState() retorna um array bidimensional: [valor, funçãoAtualização]
+  function increment(){
+    setCounter(counter + 1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Be a hero.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Incrementar</button>
     </div>
   );
+}
+*/
+
+function App(){
+    return(
+      <Routes />
+    );
 }
 
 export default App;
